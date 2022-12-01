@@ -1,0 +1,222 @@
+:root {
+    --big-stone: #19283F;
+    --big-stone2: hsl(216, 44%, 24%);
+    --polar: #f0f8fb;
+    --robin-egg-blue: #00C7C0; 
+    --radical-red: #ff3150;
+    --radical-red2: #ff4763;
+    --supernova: #ffc501;
+    --tower-gray: #a8b9c0;
+    --amber: #ffc400;
+    --black-squeeze: #eff7fa;
+    
+    --ff-primary: 'Roboto', sans-serif;
+
+    --fw-light: 300;
+    --fw-regular: 400;
+    --fw-medium: 500;
+
+    --fs-300: .8125rem;
+    --fs-400: .9375rem;
+    --fs-500: 1.25rem;
+    --fs-600: 2.1875rem;
+    --fs-700: 3.1875rem;
+
+    --size-400: 1.25rem;
+    --size-450: 1.5rem;
+    --size-500: 1.875rem;
+    --size-600: 3.125rem;
+    --size-700: 3.75rem;
+    --size-800: 7rem;
+}
+
+body {
+    font-family: var(--ff-primary); 
+}
+
+.text-big-stone {
+    color: var(--big-stone);
+}
+
+.text-polar {
+    color: var(--polar);
+}
+
+.text-robin-egg-blue {
+    color: var(--robin-egg-blue);
+}
+
+.text-radical-red {
+    color: var(--radical-red);
+}
+
+.text-supernova {
+    color: var(--supernova);
+}
+
+.text-tower-gray {
+    color: var(--tower-gray);
+}
+
+.text-amber {
+    color: var(--amber);
+}
+
+.text-black-squeeze {
+    color: var(--black-squeeze);
+}
+
+.bg-big-stone {
+    background-color: var(--big-stone);
+}
+
+.bg-polar {
+    background-color: var(--polar);
+}
+
+.bg-robin-egg-blue {
+    background-color: var(--robin-egg-blue);
+}
+
+.bg-radical-red {
+    background-color: var(--radical-red);
+}
+
+.bg-supernova {
+    background-color: var(--supernova);
+}
+
+.bg-tower-gray {
+    background-color: var(--tower-gray);
+}
+
+.bg-amber {
+    background-color: var(--amber);
+}
+
+.bg-black-squeeze {
+    background-color: var(--black-squeeze);
+}
+
+.fw-light {
+    font-weight: var(--fw-light);
+}
+
+.fw-regular {
+    font-weight: var(--fw-regular);
+}
+
+.fw-medium {
+    font-weight: var(--fw-medium);
+}
+
+.fs-300 {
+    font-size: var(--fs-300);
+}
+
+.fs-400 {
+    font-size: var(--fs-400);
+}
+
+.fs-500 {
+    font-size: var(--fs-500);
+}
+
+.fs-600 {
+    font-size: var(--fs-600);
+}
+
+.fs-700 {
+    font-size: var(--fs-700);
+}
+
+.primary-heading {
+    font-size: var(--fs-700);
+    font-weight: var(--fw-light);
+    color: var(--polar);
+}
+
+.secondary-heading {
+    font-size: var(--fs-600);
+    font-weight: var(--fw-medium);
+    color: var(--big-stone);
+}
+
+.third-heading {
+    font-size: var(--fs-500);
+    font-weight: var(--fw-regular);
+    color: var(--big-stone); 
+}
+
+.general-text {
+    font-size: var(--fs-400);
+    font-weight: var(--fw-regular);
+    color: var(--tower-gray);
+}
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.button {
+    cursor: pointer;
+    border: 0;
+    border-radius: var(--size-400);
+    padding: 0.9375em 3.6875em;
+    color: var(--supernova);
+    background-color: var(--radical-red);
+}
+
+.modify-button {
+    text-align: center;
+    margin-top: var(--size-700);
+    padding-bottom: var(--size-700);
+}
+
+.button[data-type="inverted"] {
+    background-color: var(--big-stone);
+}
+
+.button:hover,
+.buton:focus-visible {
+    background-color: var(--radical-red2);
+}
+
+.button[data-type="inverted"]:hover,
+.button[data-type="inverted"]:focus-visible {
+    background-color: var(--big-stone2);
+}
+
+.section-primary-title {
+    padding-top: var(--size-700);
+    text-align: center;
+}
+
+.section-secondary-title {
+    padding-top: var(--size-800);
+    text-align: center;
+}
+
+.section-primary-title h2 {
+    margin-top: var(--size-600);
+}
+
+.section-primary-title p,
+.section-secondary-title p {
+    margin-top: var(--size-400);
+    line-height: var(--size-400);
+}
+
+.blue-line {
+    height: 2px;
+    width: 150px;
+    background-color: var(--robin-egg-blue);
+    margin: 18px auto 0;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: var(--size-500);
+}

@@ -1,0 +1,95 @@
+footer .grid {
+    padding: var(--size-700) 0;
+}
+
+footer .first-column {
+    grid-column: 1 / span 4;
+}
+
+footer .second-column {
+    grid-column: 5 / span 4;
+}
+
+footer .third-column {
+    grid-column: 9 / span 4;
+}
+
+footer .first-column p {
+    line-height: var(--size-450);
+}
+
+footer .first-column > a + p {
+    margin: var(--size-500) 0 4rem;
+    
+}
+
+footer .second-column ul li {
+    margin-bottom: 1.5rem;
+}
+
+footer .second-column a {
+    text-decoration: none;
+    color: var(--tower-gray);
+}
+
+footer .second-column a:hover {
+    color: var(--robin-egg-blue);
+}
+
+footer .third-column p {
+    margin-top: var(--size-450);
+    line-height: var(--size-500);
+}
+
+footer .third-column .button {
+    margin-top: var(--size-500);
+    max-width: 100%;
+}
+
+footer .third-column [aria-label="Social links"] {
+    margin-top: 2.5em;
+    display: flex;
+    gap: 2.25rem;
+}
+
+.footer-nav {
+    columns: 2;
+}
+
+@media screen and (max-width: 48em) {
+    footer .first-column {
+        max-width: 23rem;
+    }
+
+    footer .grid {
+        grid-template-rows: repeat(3, 1fr);
+    }
+
+    footer [class$="-column"] {
+        justify-self: center;
+    }
+
+    footer .first-column {
+        grid-column: 1 / span 12;
+        grid-row: 3;
+    }
+
+    footer .first-column img {
+        display: block;
+        margin: auto;
+    }
+    
+    footer .second-column {
+        grid-column: 1 / span 12;
+        grid-row: 2;
+    }
+    
+    footer .third-column {
+        grid-column: 1 / span 12;
+        grid-row: 1;
+    }
+
+    footer .third-column li {
+        margin: auto;
+    }
+}
